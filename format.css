@@ -1,0 +1,17 @@
+* {
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gridSquares {
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    align-items: center;
+
+
+}
