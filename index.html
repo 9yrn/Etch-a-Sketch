@@ -4,14 +4,53 @@
     <link rel="stylesheet" href="format.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch A Sketch</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Tiny5&display=swap');
+    </style>
+    <title>Etch A Sketch | Drawing Board</title>
 </head>
 <body>
-    <button id="createDimensions">Values</button>
-    <div class="container">
+    <main class="app-shell">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">Digital drawing board</p>
+                <h1>Etch <span>&amp;</span> Sketch</h1>
+            </div>
+            <p class="instruction">Press and drag across the board to draw.</p>
+        </header>
 
-    </div>
-    
+        <section class="workspace" aria-label="Etch A Sketch controls and drawing board">
+            <aside class="menu-panel">
+                <div class="menu-heading">
+                    <p class="eyebrow">Tools</p>
+                    <h2>Make your mark</h2>
+                </div>
+
+                <label for="gridSize">Grid size <output id="gridValue">16 x 16</output></label>
+                <input id="gridSize" type="range" min="4" max="32" value="16">
+
+                <label for="penColor">Ink color</label>
+                <div class="color-control">
+                    <input id="penColor" type="color" value="#17212b" aria-label="Choose ink color">
+                    <span id="colorValue">Midnight ink</span>
+                </div>
+
+                <div class="tool-actions">
+                    <button id="penTool" class="tool-button active" type="button">Pen</button>
+                    <button id="eraserTool" class="tool-button" type="button">Eraser</button>
+                </div>
+                <button id="createDimensions" class="primary-button" type="button">Create board</button>
+                <button id="clearBoard" class="secondary-button" type="button">Clear board</button>
+
+                <p class="shortcut-note">Board size: <strong>4–32</strong> squares per side</p>
+            </aside>
+
+            <div class="board-frame">
+                <div class="board-label"><span class="status-dot"></span><span id="boardStatus">Ready to draw</span></div>
+                <div class="container" aria-label="Drawing board"></div>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="back.js"></script>
 </html>
