@@ -1,38 +1,39 @@
-# Etch & Sketch
+# Etch & Sketch 🎨
 
-A browser-based Etch A Sketch drawing board built with HTML, CSS, and vanilla JavaScript.
+**Etch & Sketch** is an interactive, browser-based digital drawing board built from the ground up using pure vanilla JavaScript. It allows users to create pixel-style art on a dynamically sized grid, providing a smooth "press-and-drag" drawing experience similar to the classic physical toy. 
 
-## Features
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-- Draw by pressing and dragging across the board
-- Choose a custom ink color
-- Switch between pen and eraser tools
-- Create a grid from 4 x 4 to 32 x 32 squares
-- Clear the current board
-- Responsive layout for desktop and mobile screens
+## ✨ Features
 
-## Getting Started
+- **Dynamic Grid Resizing:** Adjust your canvas size anywhere from a chunky `4x4` grid up to a highly detailed `32x32` grid using a sleek range slider.
+- **Custom Ink Colors:** Pick any color from the color wheel using the native color picker tool to bring your art to life.
+- **Pen & Eraser Tools:** Easily toggle between drawing mode and erasing mode with active state indicators.
+- **Press & Drag Mechanics:** Smooth event listeners (`mousedown`, `mouseenter`, `mouseup`) allow for continuous, uninterrupted drawing across the canvas.
+- **Live Status Tracker:** A real-time UI indicator that lets you know if you are currently "Ready to draw", "Drawing", "Erasing", or if the board was just cleared.
+- **Instant Clear:** Wipe your canvas instantly with a single click.
 
-1. Clone or download this repository.
-2. Open `index.html` in a web browser.
-3. Select a grid size, choose a color, and press **Create board**.
-4. Press and drag across the board to draw.
+## 🛠 Tech Stack
 
-No build tools, dependencies, or server are required.
+- **HTML5:** Semantic markup and layout structure.
+- **CSS3:** Custom styling, flexbox/grid layouts, UI control aesthetics, and custom web fonts (`Jacquard 12` & `Tiny5`).
+- **Vanilla JavaScript (ES6+):** DOM manipulation, event listener handling, grid generation logic, and state management (tracking tool selections and mouse states).
 
-## Project Structure
+## 🚀 Getting Started
 
-```text
-.
-├── index.html   # Page structure and drawing-board controls
-├── format.css   # Layout, styling, and responsive rules
-├── back.js      # Grid creation, drawing, erasing, and board controls
-└── README.md    # Project documentation
-```
+Since this project relies entirely on client-side vanilla technologies, there are no build steps, dependencies, or installations required!
 
-## Built With
+1. **Clone the repository:**
+   git clone https://github.com/your-username/etch-a-sketch.git
+   cd etch-a-sketch
 
-- HTML5
-- CSS3
-- JavaScript
+2. **Open the application:**
+   Simply double-click the `index.html` file, or open it in your preferred web browser.
 
+3. **Start Drawing!**
+   Adjust your grid size, select an ink color, and click and drag across the canvas. 
+
+---
+*Developed as part of the [The Odin Project](https://www.theodinproject.com/) curriculum.*
