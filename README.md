@@ -35,5 +35,4 @@ Since this project relies entirely on client-side vanilla technologies, there ar
 3. **Start Drawing!**
    Adjust your grid size, select an ink color, and click and drag across the canvas. 
 
----
-*Developed as part of the [The Odin Project](https://www.theodinproject.com/) curriculum.*
+
